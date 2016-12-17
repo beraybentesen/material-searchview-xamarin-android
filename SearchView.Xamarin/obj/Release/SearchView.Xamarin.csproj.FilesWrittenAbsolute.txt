@@ -1,0 +1,6 @@
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/obj/Release/MonoAndroid,Version=v7.0.AssemblyAttribute.cs
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/obj/Release/SearchView.Xamarin.obj.Release.__AndroidLibraryProjects__.zip
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/bin/Release/SearchView.Xamarin.dll.mdb
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/bin/Release/SearchView.Xamarin.dll
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/obj/Release/SearchView.Xamarin.dll
+/Users/user/Projects/SearchView.Xamarin/SearchView.Xamarin/obj/Release/SearchView.Xamarin.dll.mdb

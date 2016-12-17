@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.materialsearchview">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.materialsearchview.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.materialsearchview&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.4.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IOnClickListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="itemViewOnClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" final="false" name="MaterialSearchView" static="false" visibility="public">
+<implements name="android.widget.Filter.FilterListener" name-generic-aware="android.widget.Filter.FilterListener">
+</implements>
+<implements name="com.materialsearchview.IOnClickListener" name-generic-aware="com.materialsearchview.IOnClickListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MaterialSearchView" static="false" type="com.materialsearchview.MaterialSearchView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MaterialSearchView" static="false" type="com.materialsearchview.MaterialSearchView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MaterialSearchView" static="false" type="com.materialsearchview.MaterialSearchView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeSearch" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dismissSuggestions" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideKeyboard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSearchOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="itemViewOnClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFilterComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestoreInstanceState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcelable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSaveInstanceState" native="false" return="android.os.Parcelable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAdapter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.ListAdapter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAnimationDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBackIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCloseIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCursorDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEllipsize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHint" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHintTextColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMenuItem" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MenuItem">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnItemClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView.OnItemClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnQueryTextListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.materialsearchview.MaterialSearchView.OnQueryTextListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnSearchViewListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.materialsearchview.MaterialSearchView.SearchViewListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setQuery" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSubmitOnClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSuggestionBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSuggestionIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSuggestions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTextColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVoiceIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVoiceSearch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showKeyboard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSearch" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSearch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSuggestions" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showVoice" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="REQUEST_VOICE" static="true" transient="false" type="int" type-generic-aware="int" value="9999" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="iOnClickListener" static="false" transient="false" type="com.materialsearchview.IOnClickListener" type-generic-aware="com.materialsearchview.IOnClickListener" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.1" static="false" visibility="">
+<implements name="android.widget.AdapterView.OnItemClickListener" name-generic-aware="android.widget.AdapterView.OnItemClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.2" static="false" visibility="">
+<implements name="android.widget.TextView.OnEditorActionListener" name-generic-aware="android.widget.TextView.OnEditorActionListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onEditorAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.TextView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.view.KeyEvent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.3" static="false" visibility="">
+<implements name="android.text.TextWatcher" name-generic-aware="android.text.TextWatcher">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="afterTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="beforeTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.4" static="false" visibility="">
+<implements name="android.view.View.OnFocusChangeListener" name-generic-aware="android.view.View.OnFocusChangeListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFocusChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.5" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.6" static="false" visibility="">
+<implements name="android.view.MenuItem.OnMenuItemClickListener" name-generic-aware="android.view.MenuItem.OnMenuItemClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMenuItemClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MenuItem">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.7" static="false" visibility="">
+<implements name="com.materialsearchview.utils.AnimationUtil.AnimationListener" name-generic-aware="com.materialsearchview.utils.AnimationUtil.AnimationListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationCancel" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationEnd" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAnimationStart" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MaterialSearchView.OnQueryTextListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onQueryTextChange" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onQueryTextSubmit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View.BaseSavedState" extends-generic-aware="android.view.View.BaseSavedState" final="false" name="MaterialSearchView.SavedState" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.materialsearchview.MaterialSearchView.SavedState&gt;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MaterialSearchView.SavedState.1" static="true" visibility="">
+<implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.materialsearchview.MaterialSearchView.SavedState&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MaterialSearchView.SearchViewListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onSearchViewClosed" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSearchViewShown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package>
+<package name="com.materialsearchview.utils">
+<class abstract="false" deprecated="not deprecated" extends="android.animation.AnimatorListenerAdapter" extends-generic-aware="android.animation.AnimatorListenerAdapter" final="false" name="AnimationUtil.2" static="true" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AnimationUtil.AnimationListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationCancel" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationEnd" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationStart" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="SearchAdapter" static="false" visibility="public">
+<implements name="android.widget.Filterable" name-generic-aware="android.widget.Filterable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SearchAdapter" static="false" type="com.materialsearchview.utils.SearchAdapter" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String[]">
+</parameter>
+<parameter name="p2" type="com.materialsearchview.IOnClickListener">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SearchAdapter" static="false" type="com.materialsearchview.utils.SearchAdapter" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String[]">
+</parameter>
+<parameter name="p2" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="com.materialsearchview.IOnClickListener">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFilter" native="false" return="android.widget.Filter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.Filter" extends-generic-aware="android.widget.Filter" final="false" name="SearchAdapter.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="performFiltering" native="false" return="android.widget.Filter.FilterResults" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="publishResults" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.CharSequence">
+</parameter>
+<parameter name="p1" type="android.widget.Filter.FilterResults">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SearchAdapter.SuggestionsViewHolder" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="SearchAdapter.SuggestionsViewHolder" static="false" type="com.materialsearchview.utils.SearchAdapter.SuggestionsViewHolder" visibility="public">
+<parameter name="p1" type="android.view.View">
+</parameter>
+</constructor>
+</class>
+</package>
+</api>
