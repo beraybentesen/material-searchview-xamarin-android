@@ -25,14 +25,6 @@ Simple use cases :
     </FrameLayout>
 ```
 
-```cs
-materialSearchView.SetSuggestionIcon(ContextCompat.GetDrawable(this, Resource.Drawable.vector_location_pin));
-materialSearchView.SetOnQueryTextListener(this);
-var searchAdapter = new SearchAdapter(this, locationRecommendationStringArray, ContextCompat.GetDrawable(this, Resource.Drawable.vector_map), true, this);
-materialSearchView.SetAdapter(searchAdapter);
-materialSearchView.IOnClickListener = this;
-```
-
  Implement Query Text Listener :
 
 ```cs
@@ -68,6 +60,16 @@ public void ItemViewOnClick(View p0, int p1)
 	   // Do Something, p1 = position
 	}
     
+```
+
+Setup SearchView
+
+```cs
+materialSearchView.SetSuggestionIcon(ContextCompat.GetDrawable(this, Resource.Drawable.vector_location_pin));
+materialSearchView.SetOnQueryTextListener(this);
+var searchAdapter = new SearchAdapter(this, YourStringArray, ContextCompat.GetDrawable(this, Resource.Drawable.vector_map), true, this);
+materialSearchView.SetAdapter(searchAdapter);
+materialSearchView.IOnClickListener = this;
 ```
 
 
