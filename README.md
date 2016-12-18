@@ -31,8 +31,7 @@ public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryT
 	{
     ...
 ```
-
-// Override Query Text Listener Methods			 
+		 
 ```cs
 	public bool OnQueryTextChange(string p0)
 		{
