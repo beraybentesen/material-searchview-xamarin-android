@@ -57,7 +57,7 @@ public bool OnQueryTextSubmit(string p0)
  
 
 ```cs
-public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener
+public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener, IOnClickListener
 	{
     ...
     
