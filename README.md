@@ -84,7 +84,7 @@ materialSearchView.SetAdapter(searchAdapter);
 materialSearchView.IOnClickListener = this;
 ```
 
-
+Example
 
 ![alt tag](http://g.recordit.co/pdPddtBOxz.gif)
 
