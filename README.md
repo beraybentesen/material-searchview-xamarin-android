@@ -25,7 +25,9 @@ Add following code to layout
 </FrameLayout>
 ```
 
+
  Implement Query Text Listener :
+ 
 
 ```cs
 public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener
@@ -46,9 +48,13 @@ public bool OnQueryTextSubmit(string p0)
 	{
 		return false;
 	}	     
+
 ```
 
- Implement IOnClickListener  
+
+ Implement IOnClickListener 
+ 
+ 
 
 ```cs
 public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener
@@ -62,7 +68,9 @@ public void ItemViewOnClick(View p0, int p1)
     
 ```
 
+
 Setup SearchView
+
 
 ```cs
 materialSearchView.SetSuggestionIcon(ContextCompat.GetDrawable(this, Resource.Drawable.vector_location_pin));
@@ -75,6 +83,7 @@ materialSearchView.IOnClickListener = this;
 
 
 ![alt tag](http://g.recordit.co/pdPddtBOxz.gif)
+
 
 Author
 ------
