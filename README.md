@@ -8,7 +8,7 @@ Download : Available on Nuget Gallery (https://www.nuget.org/packages/SearchView
 How do I use SearchView ?
 -------------------
 
-Simple use cases :
+Add following code to layout
 
 ```xml
 <FrameLayout
@@ -22,7 +22,7 @@ Simple use cases :
             android:id="@+id/search_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-    </FrameLayout>
+</FrameLayout>
 ```
 
  Implement Query Text Listener :
