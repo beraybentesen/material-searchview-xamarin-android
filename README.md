@@ -41,7 +41,7 @@ public bool OnQueryTextChange(string p0)
 	          // Do something
 		}
 		  return true;
-		}
+	}
 public bool OnQueryTextSubmit(string p0)
 	{
 		return false;
