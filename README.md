@@ -23,7 +23,7 @@ Simple use cases :
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </FrameLayout>
-
+```
 
 // Implement Query Text Listener :
 ```cs
