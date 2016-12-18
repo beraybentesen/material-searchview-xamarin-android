@@ -10,7 +10,7 @@ How do I use SearchView ?
 
 Simple use cases :
 
-```javascript
+```xml
 <FrameLayout
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
