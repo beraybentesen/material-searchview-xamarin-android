@@ -73,6 +73,10 @@ Setup SearchView
 
 
 ```cs
+
+materialSearchView = FindViewById<MaterialSearchView>(Resource.Id.search_view);
+
+
 materialSearchView.SetSuggestionIcon(ContextCompat.GetDrawable(this, Resource.Drawable.vector_location_pin));
 materialSearchView.SetOnQueryTextListener(this);
 var searchAdapter = new SearchAdapter(this, YourStringArray, ContextCompat.GetDrawable(this, Resource.Drawable.vector_map), true, this);
