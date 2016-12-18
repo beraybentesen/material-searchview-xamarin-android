@@ -25,7 +25,8 @@ Simple use cases :
     </FrameLayout>
 ```
 
-// Implement Query Text Listener :
+ Implement Query Text Listener :
+
 ```cs
 public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener
 	{
@@ -48,16 +49,17 @@ public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryT
 		}	     
 ```
 
-// Implement IOnClickListener  
+ Implement IOnClickListener  
+
 ```cs
 public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryTextListener
 	{
     ...
     
 public void ItemViewOnClick(View p0, int p1)
-		{
-			// Do Something, p1 = position
-		}
+	{
+	   // Do Something, p1 = position
+	}
     
 ```
 
