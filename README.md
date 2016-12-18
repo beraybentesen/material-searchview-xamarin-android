@@ -34,19 +34,18 @@ public class LocationsActivity : AppCompatActivity, MaterialSearchView.IOnQueryT
 ```
 		 
 ```cs
-	public bool OnQueryTextChange(string p0)
+public bool OnQueryTextChange(string p0)
+	{
+	  if (!string.IsNullOrEmpty(p0))
 		{
-			if (!string.IsNullOrEmpty(p0))
-			{
-			  // Do something
-			}
-			return true;
+	          // Do something
 		}
-
-		public bool OnQueryTextSubmit(string p0)
-		{
-			return false;
-		}	     
+		  return true;
+		}
+public bool OnQueryTextSubmit(string p0)
+	{
+		return false;
+	}	     
 ```
 
  Implement IOnClickListener  
